@@ -21,19 +21,6 @@ int main()
         cout << endl; 
     }
 
-    cout << "------ X축 회전행렬 --------" << endl;
-    D3DXMatrixRotationX(&matMatrix, D3DXToRadian(30));
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            printf("%7.1f", matMatrix(i, j));
-        }
-        cout << endl;
-    }
-
-
-
     return 0;     
 }
 
