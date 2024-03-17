@@ -1,8 +1,8 @@
 ﻿#include <iostream> 
 #include <d3d9.h> 
 #include <d3dx9.h> 
-// #include <d3dx9math.h>
-#include <directxmath.h>
+#include <d3dx9math.h>
+// #include <directxmath.h>
 
 using namespace std; 
 
@@ -19,7 +19,9 @@ int main()
         }
     }
 
-    matResult = matMatrix * matIdentity; 
+    // matResult = matMatrix * matIdentity;
+
+    D3DXMatrixMultiply(&matResult, &matMatrix, &matIdentity); 
 
     cout << "[ 결과행렬 ]" << endl;
 
